@@ -1,0 +1,13 @@
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.exe
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.deps.json
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.runtimeconfig.json
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.runtimeconfig.dev.json
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.dll
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.pdb
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.csprojAssemblyReference.cache
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.AssemblyInfoInputs.cache
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.AssemblyInfo.cs
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.csproj.CoreCompileInputs.cache
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.dll
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.pdb
+D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.genruntimeconfig.cache
