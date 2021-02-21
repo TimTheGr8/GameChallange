@@ -17,7 +17,7 @@ namespace Game_Challenge
         {
             for (int i = 0; i < roomHolder.Length; i++)
             {
-                roomHolder[i] = new Room("starting room", "north", "", "the faint odor of food coming from the north");
+                roomHolder[i] = new Room("starting room", "north", "", "the faint odor of food coming from the north", "You are in a small room that feels cramped. You can see some light coming from a small archway to the north.");
             }
             currentRoom = roomHolder[0];
             currentRoom.RoomInitilization();

@@ -9,19 +9,21 @@
   },
   "packageFolders": {
     "C:\\Users\\tjans\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GameDevelopment\\GameChallenge\\GameChallange\\Game_Challenge\\Game_Challenge.csproj",
+      "projectUniqueName": "C:\\Users\\tjans\\Desktop\\GameChallange\\Game_Challenge\\Game_Challenge.csproj",
       "projectName": "Game_Challenge",
-      "projectPath": "D:\\GameDevelopment\\GameChallenge\\GameChallange\\Game_Challenge\\Game_Challenge.csproj",
+      "projectPath": "C:\\Users\\tjans\\Desktop\\GameChallange\\Game_Challenge\\Game_Challenge.csproj",
       "packagesPath": "C:\\Users\\tjans\\.nuget\\packages\\",
-      "outputPath": "D:\\GameDevelopment\\GameChallenge\\GameChallange\\Game_Challenge\\obj\\",
+      "outputPath": "C:\\Users\\tjans\\Desktop\\GameChallange\\Game_Challenge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\tjans\\AppData\\Roaming\\NuGet\\NuGet.Config",
