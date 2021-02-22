@@ -92,14 +92,6 @@ namespace Game_Challenge
             Console.ReadKey();
         }
 
-        public void NewRoom(int nextRoom)
-        {
-            currentRoom = roomHolder[0];
-            currentRoom.RoomInitilization();
-
-            CheckForWin(currentRoom);
-        }
-
         public void ChangeRooms(string direction)
         {
             int nextRoom = -1;
@@ -118,10 +110,12 @@ namespace Game_Challenge
             }
             else
                 Console.WriteLine("There is no exit in that direction, just a wall.");
+
+            CheckEndGame(currentRoom);
         }
 
 
-        private void CheckForWin(Room _room)
+        private void CheckEndGame(Room _room)
         {
             if(_room.GetRoomNumber() == 2)
             {
