@@ -6,41 +6,43 @@ namespace Game_Challenge
 {
     public class Room
     {
-        private string roomName;
+        private int roomNumber;
         private string descritption;
         private string[] exits;
+        public int[] connectingRooms;
         private string sounds;
         private string smells;
+        Game game = new Game();
 
 
         #region Constructors
-        public Room(string _name, string _exit1, string _sounds, string _smells, string _description)
+        public Room(int _number, string _exit1, string _sounds, string _smells, string _description)
         {
-            roomName = _name;
+            roomNumber = _number;
             exits = new string[] { _exit1 };
             smells = _smells;
             sounds = _sounds;
             descritption = _description;
         }
-        public Room(string _name, string _exit1, string _exit2, string _sounds, string _smells, string _description)
+        public Room(int _number, string _exit1, string _exit2, string _sounds, string _smells, string _description)
         {
-            roomName = _name;
+            roomNumber = _number;
             exits = new string[] { _exit1, _exit2 };
             smells = _smells;
             sounds = _sounds;
             descritption = _description;
         }
-        public Room(string _name, string _exit1, string _exit2, string _exit3, string _sounds, string _smells, string _description)
+        public Room(int _number, string _exit1, string _exit2, string _exit3, string _sounds, string _smells, string _description)
         {
-            roomName = _name;
+            roomNumber = _number;
             exits = new string[] { _exit1, _exit2, _exit3 };
             smells = _smells;
             sounds = _sounds;
             descritption = _description;
         }
-        public Room(string _name, string _exit1, string _exit2, string _exit3, string _exit4, string _sounds, string _smells, string _description)
+        public Room(int _number, string _exit1, string _exit2, string _exit3, string _exit4, string _sounds, string _smells, string _description)
         {
-            roomName = _name;
+            roomNumber = _number;
             exits = new string[] { _exit1, _exit2, _exit3, _exit4 };
             smells = _smells;
             sounds = _sounds;
@@ -58,9 +60,13 @@ namespace Game_Challenge
             string output = "";
             if(smells == "")
             {
-                output = "You ";
+                output = "You try to catch a wiff of anything, but nothing really stands out.";
             }
-            Console.WriteLine($"You sniff the air and can smell {smells}.");
+            else
+            {
+                output = $"You sniff the air and can smell {smells}.";
+            }
+            Console.WriteLine(output);
         }
 
         public void UseListen()
@@ -82,9 +88,15 @@ namespace Game_Challenge
             Console.WriteLine(descritption);
         }
 
-        public void ChangeRooms(Room nextRoom, string direction)
+        public int GetRoomNumber()
         {
-            nextRoom.RoomInitilization();
+            return roomNumber;
         }
-    }
+
+        public string[] GetExits()
+        {
+            return exits;
+        }
+
+    } // Class ends here
 }

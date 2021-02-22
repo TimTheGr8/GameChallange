@@ -15,11 +15,11 @@ namespace Game_Challenge
     {
         static void Main(string[] args)
         {
-            
+
             Game game = new Game();
             game.Init();
-            
-            while(game.IsGamePlaying() == true)
+
+            while (game.IsGamePlaying() == true)
             {
 
             }
@@ -27,7 +27,6 @@ namespace Game_Challenge
             Console.WriteLine("Thanks for playing. Come back soon! Press any key to quit.");
             Console.ReadKey();
             Environment.Exit(0);
-            
         }
     }
 }
