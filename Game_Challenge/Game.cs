@@ -15,10 +15,8 @@ namespace Game_Challenge
 
         public void Init()
         {
-            for (int i = 0; i < roomHolder.Length; i++)
-            {
-                roomHolder[i] = new Room("starting room", "north", "", "the faint odor of food coming from the north", "You are in a small room that feels cramped. You can see some light coming from a small archway to the north.");
-            }
+            DisplayInstructions();
+            RoomSetup.SetupRooms(roomHolder);
             currentRoom = roomHolder[0];
             currentRoom.RoomInitilization();
             GetPlayerInput(Console.ReadLine());
@@ -34,11 +32,10 @@ namespace Game_Challenge
             string phrase = input;
             phrase.ToLower();
             string[] words = phrase.Split(' ');
-            bool sucess = false;
             switch (words[0])
             {
                 case "go":
-                    currentRoom.ChangeRooms(roomHolder[0]);
+                    currentRoom.ChangeRooms(roomHolder[0], words[1]);
                     break;
                 case "smell":
                     currentRoom.UseSmell();
@@ -52,9 +49,20 @@ namespace Game_Challenge
             }
         }
 
-        private void TryChangeRooms()
+        private void DisplayInstructions()
         {
+            Console.WriteLine("Welcome to the great escpae! You are not sure how, why, or where you are. All you know is that you must keep moving.\n" +
+                              "If you stay in one place too long you fear the worst may happen. The goal is to make it to the exit. But how will\n" +
+                              "you find the exit? Simple, you can use your sense of smell and hearing. All you need to do is type \"smell\" to see what\n" +
+                              "scents are around you. For hearing type \"listen\" to hear any sounds that may be close. To navigate around you type \"go\" \n" +
+                              "and then a direction. For example, to exit the current room to the north type \"go north\". As long as there is an exit in \n" +
+                              "that direction you will go to that room. To exit or quit the game type \"quit\" or \"exit\". To restart the game type \"retry\".\n" +
+                              "IF at any time you forget what to do just type \"help\". This will bring up a list of commands that you are able to use. \n" +
+                              "Now get out there and find your way to the exit.\n" +
+                              "\n" +
+                              "Press any key to continue. ");
 
+            Console.ReadKey();
         }
 
     } //Class ends here

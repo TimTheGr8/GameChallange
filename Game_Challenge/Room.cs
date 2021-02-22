@@ -55,6 +55,11 @@ namespace Game_Challenge
 
         public  void UseSmell()
         {
+            string output = "";
+            if(smells == "")
+            {
+                output = "You ";
+            }
             Console.WriteLine($"You sniff the air and can smell {smells}.");
         }
 
@@ -77,10 +82,9 @@ namespace Game_Challenge
             Console.WriteLine(descritption);
         }
 
-        public void ChangeRooms(Room nextRoom)
+        public void ChangeRooms(Room nextRoom, string direction)
         {
-            Console.WriteLine("You have walked to the north and escpaed with your life!!!!!.");
-            //nextRoom.RoomInitilization();
+            nextRoom.RoomInitilization();
         }
     }
 }
