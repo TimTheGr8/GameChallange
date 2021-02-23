@@ -17,9 +17,8 @@ namespace Game_Challenge
         {
 
             Game game = new Game();
-            game.Init();
 
-            while (game.IsGamePlaying() == true)
+            while (game.IsGameRunning() == true)
             {
 
             }

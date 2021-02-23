@@ -11,3 +11,16 @@ D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcorea
 D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.dll
 D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.pdb
 D:\GameDevelopment\GameChallenge\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.genruntimeconfig.cache
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.exe
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.deps.json
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.runtimeconfig.json
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.runtimeconfig.dev.json
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.dll
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\bin\Debug\netcoreapp3.1\Game_Challenge.pdb
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.csprojAssemblyReference.cache
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.AssemblyInfoInputs.cache
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.AssemblyInfo.cs
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.csproj.CoreCompileInputs.cache
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.dll
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.pdb
+C:\Users\tjans\Desktop\Protfolio\GameChallange\Game_Challenge\obj\Debug\netcoreapp3.1\Game_Challenge.genruntimeconfig.cache

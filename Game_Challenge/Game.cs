@@ -7,6 +7,7 @@ namespace Game_Challenge
     public class Game
     {
         public static bool isPlayerAlive = true;
+        private bool isGameRuning = true;
         private int timerCount = 10;
         private string currentOutput = "";
         private Room[] roomHolder = new Room[3];
@@ -15,26 +16,37 @@ namespace Game_Challenge
 
         public void Init()
         {
-            DisplayInstructions();
+            // Resting the variables for new playthrough
+            isPlayerAlive = true;
+            currentOutput = "";
+            roomHolder = new Room[3];
+            //Game starts here
             RoomSetup.SetupRooms(roomHolder);
+            Console.Clear();
+            DisplayInstructions();
             currentRoom = roomHolder[0];
             currentRoom.RoomInitilization();
             GetPlayerInput();
         }
 
-        public bool IsGamePlaying()
+        public bool IsGameRunning()
         {
-            while(isPlayerAlive == true)
+            while (isGameRuning == true)
             {
-                GetPlayerInput();
+                Init();
+                while (isPlayerAlive == true)
+                {
+                    GetPlayerInput();
+                }
+                Console.WriteLine("To restart type \"retry\" or \"quit\" to quit the game");
+                isGameRuning = CheckRetry();
             }
-            return isPlayerAlive;
+            return isGameRuning;
         }
 
         public void GetPlayerInput()
         {
-            string phrase = Console.ReadLine();
-            phrase.ToLower();
+            string phrase = Console.ReadLine().ToLower();
             string[] words = phrase.Split(' ');
             switch (words[0])
             {
@@ -55,6 +67,10 @@ namespace Game_Challenge
                     break;
                 case "help":
                     DisplayHelp();
+                    break;
+                case "retry":
+                    Console.Clear();
+                    Init();
                     break;
                 default:
                     Console.WriteLine("I am sorry, but I do not understand that response. Please try again.");
@@ -119,8 +135,29 @@ namespace Game_Challenge
         {
             if(_room.GetRoomNumber() == 2)
             {
+                Console.WriteLine();
+                Console.WriteLine("You did not survive this round. Better luck next time.");
                 isPlayerAlive = false;
             }
+        }
+
+        private bool CheckRetry()
+        {
+            string input = Console.ReadLine().ToLower();
+            if (input == "retry")
+            {
+                isGameRuning = true;
+            }
+            else if (input == "exit" || input == "quit")
+            {
+                isGameRuning = false;
+            }
+            else
+            {
+                Console.WriteLine("That is not a valid input. Please try again.");
+            }
+
+            return isGameRuning;
         }
 
     } //Class ends here
