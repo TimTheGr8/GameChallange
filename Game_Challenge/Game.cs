@@ -10,7 +10,7 @@ namespace Game_Challenge
         private bool isGameRuning = true;
         private int timerCount = 10;
         private string currentOutput = "";
-        private Room[] roomHolder = new Room[3];
+        private Room[] roomHolder = new Room[12];
 
         private Room currentRoom;
 
@@ -19,7 +19,7 @@ namespace Game_Challenge
             // Resting the variables for new playthrough
             isPlayerAlive = true;
             currentOutput = "";
-            roomHolder = new Room[3];
+            roomHolder = new Room[12];
             //Game starts here
             RoomSetup.SetupRooms(roomHolder);
             Console.Clear();
@@ -80,7 +80,7 @@ namespace Game_Challenge
 
         private void DisplayInstructions()
         {
-            Console.WriteLine("Welcome to the great escpae! You are not sure how, why, or where you are. All you know is that you must keep moving.\n" +
+            Console.WriteLine("Welcome to the great escape! You are not sure how, why, or where you are. All you know is that you must keep moving.\n" +
                               "If you stay in one place too long you fear the worst may happen. The goal is to make it to the exit. But how will\n" +
                               "you find the exit? Simple, you can use your sense of smell and hearing. All you need to do is type \"smell\" to see what\n" +
                               "scents are around you. For hearing type \"listen\" to hear any sounds that may be close. To navigate around you type \"go\" \n" +
