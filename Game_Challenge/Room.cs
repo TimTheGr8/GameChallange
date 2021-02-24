@@ -12,7 +12,6 @@ namespace Game_Challenge
         public int[] connectingRooms;
         private string sounds;
         private string smells;
-        Game game = new Game();
 
 
         #region Constructors
@@ -50,12 +49,7 @@ namespace Game_Challenge
         }
         #endregion
 
-        public  void RoomInitilization()
-        {
-            DisplayOpeningDescription();
-        }
-
-        public  void UseSmell()
+        public  string UseSmell()
         {
             string output = "";
             if(smells == "")
@@ -66,10 +60,10 @@ namespace Game_Challenge
             {
                 output = $"You sniff the air and can smell {smells}.";
             }
-            Console.WriteLine(output);
+            return output;
         }
 
-        public void UseListen()
+        public string UseListen()
         {
             string output = "";
             if(sounds == "")
@@ -80,12 +74,12 @@ namespace Game_Challenge
             {
                 output = $"You listen carefully and hear {sounds}.";
             }
-            Console.WriteLine(output);
+            return output;
         }
 
-        public void DisplayOpeningDescription()
+        public string DisplayOpeningDescription()
         {
-            Console.WriteLine(descritption);
+            return descritption;
         }
 
         public int GetRoomNumber()
