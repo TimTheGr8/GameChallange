@@ -20,7 +20,7 @@ namespace Game_Challenge
             
             //Here is where I started   -JP
             //Kitchen area
-            _rooms[3] = new Room(3, "north", "south", "east", "west", "the sounds of water bubbling in a pot and a soft clanking coming from a room to the north.", "garlic, onion, some kind of.... Hmm. Parsley maybe? Thyme? You're not sure.", " You find yourself greeted with cold tile and hot air. Looking around, there are even more crumbs here as well as scraps of produce that Probably didn't make it into the rubbish bin. You gather this is a kitchen, and a somewhat active on at that....\nLooking around, you see some things you could probably crawl behind to the south and the west.....");
+            _rooms[3] = new Room(3, "north", "south", "east", "west", "the sounds of water bubbling in a pot and a soft clanking coming from a room to the north, and from the east you can hear some kind of rustling from that direction. Who knows what that could be?", "garlic, onion, some kind of.... Hmm. Parsley maybe? Thyme? You're not sure.", " You find yourself greeted with cold tile and hot air. Looking around, there are even more crumbs here as well as scraps of produce that Probably didn't make it into the rubbish bin. You gather this is a kitchen, and a somewhat active on at that....\nLooking around, you see some things you could probably crawl behind to the south and the west.....");
 
             //Dining Room
             _rooms[4] = new Room(4, "north", "south", "east", "west", "that the clinking sound has gotten much louder, joined by laughter and conversations by people eating at a table. You also hear music and humming coming from the east.", "that whatever was cooking in the kitchen is much stronger here. You also catch whiffs of the women's perfumes and the men's cologne.", "Upon entering, you realize that you're surrounded by people much larger than you. Thankfully they're preoccupied with whatever heavenly smells are on the table. To the north you see a corridor with paintings hung up.");
@@ -44,7 +44,7 @@ namespace Game_Challenge
             _rooms[10] = new Room(10, "north", "", "mothballs and lots of dusty coats.", "A small closet, littered with shoes and dirt that's been tracked in. You figure this might be a cozy place to make a little home.");
 
             // Exit / Win
-            _rooms[11] = new Room(11, "south", "", "", "");
+            _rooms[11] = new Room(11, "south", "", "", "As you squeeze through this door, you have to squint as the bright sun hits you in the eyes. The warm spring air greets your little face! Your heart warms as the sun shines down on you and you realize how wonderful of a day it is. You look around to see your spouse not too far away huddled next to a plant on the walkway with your two mouselings. They are all relieved to see that you made it out unharmed and can now find a safer place to make your home.You're free to explore and eat to your hearts content, however, don't get too content! Many new dangers await you out in the wild...");
 
 
             SetupExits(_rooms);
