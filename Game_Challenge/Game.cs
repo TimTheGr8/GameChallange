@@ -30,7 +30,7 @@ namespace Game_Challenge
             currentRoom = roomHolder[0];
             currentOutput += currentRoom.DisplayOpeningDescription();
             Console.WriteLine(currentOutput);
-            //StartTimer();
+            StartTimer();
             GetPlayerInput();
         }
 
@@ -178,7 +178,7 @@ namespace Game_Challenge
             }
             else
             {
-                //StartTimer();
+                StartTimer();
             }
         }
 
@@ -222,7 +222,7 @@ namespace Game_Challenge
             {
                 isPlayerAlive = false;
                 canType = false;
-                Console.WriteLine("You died! Press enter to continue.");
+                Console.WriteLine("Smack! Without warning, two strong furry paws have closed down on you! It seems like you were too unaware of your surroundings and old Mr. Whiskers has gotten an afternoon snack....\n"                +"Press enter to continue.");
                 aTimer.Elapsed -= OnTimedEvent;
                 aTimer.Enabled = false;
             }
